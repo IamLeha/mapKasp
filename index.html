@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./nice-select.css">
+    <title>Map</title>
+</head>
+
+<body>
+
+    <div class="offices">
+        <div class="container container--mb">
+            <h2 class="title ttile--offices">Офисы</h2>
+
+            <div class="flex-box">
+                <div class="select-container">
+                    <select class="select-country">
+                        <option value="ru">Россия</option>
+                        <option value="uae">ОАЭ</option>
+                        <option value="us">Америка</option>
+                    </select>
+                </div>
+
+                <div class="btnSelect-container">
+                    <button class="btnSelect" data-x="47.2357" data-y="39.7015" data-country = "ru"
+                        value="rostov">Ростов</button>
+                    <button  class="btnSelect" data-x="45.0393" data-y="38.9872" data-country = "ru"
+                        value="krasnodar">Краснодар</button>
+                    <button  class="btnSelect" data-x="59.9343" data-y="30.3351" data-country = "ru"
+                        value="piter">Питер</button>
+                    <button  class="btnSelect" data-x="43.443579" data-y="39.910369" data-country = "ru"
+                        value="adler">Адлер</button>
+                    <button  class="btnSelect" data-x="47.216398" data-y="38.929768" data-country = "ru"
+                        value="tagan">Таганрог</button>
+
+                        <button  class="btnSelect" data-x="25.195128" data-y="55.278460" data-country = "uae"
+                        value="dubai">Dubai</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script src="./jquery.js"></script>
+    <script src="./jquery.nice-select.min.js"></script>
+
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

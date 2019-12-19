@@ -1,0 +1,106 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+}
+
+.container{
+    margin-bottom: 30px;
+}
+
+.select-container{
+    margin-bottom: 15px;
+}
+
+.btnSelect-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btnSelect{
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D1D1B;
+    background: #DAF5EF;
+    padding: 2px 3px 1px;
+    transition: all 0.3s ease;
+    border: none;
+    color: #1D1D1B;
+}
+
+.btnSelect:focus{
+    outline: none;
+}
+
+.btnSelect:hover{
+    background-color: #00A88E;
+ }
+
+.btnSelect .active{
+   background-color: #00A88E;
+}
+
+.btnSelect:not(:last-child){
+    margin-right: 5px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px; 
+}
+
+.container--mb{
+    margin-bottom: 30px;
+}
+
+.nice-select{
+    width: 360px !important;
+    margin-right: 48px;
+    border-radius: 0px !important;
+    border-color: rgba(157, 160, 161, 0.5) !important;
+    border-radius: 0 !important;
+    font-size: 18px !important;
+}
+.nice-select .list {
+    width: 100% !important;
+    border-radius: 0 !important;
+    font-size: 18px !important;
+}
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.dn{display: none;}
+
+@media screen and (max-width:1025px){
+    .container{
+        max-width: 770px; 
+    }
+}
+
+@media screen and (max-width:769px){
+    .container{
+        width: 90%;
+    }
+
+    .btnSelect-container{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:576px){
+
+}
