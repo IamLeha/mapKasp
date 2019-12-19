@@ -16,7 +16,7 @@ body {
 }
 
 .select-container{
-    margin: 15px 0px;
+    width: 100%;
 }
 
 .btnSelect-container{
@@ -82,6 +82,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    width: 100%;
 }
 
 .dn{display: none;}
@@ -101,5 +102,5 @@ body {
 
 @media screen and (max-width:576px){
     .nice-select{
-        width: 300px !important;
+        width: 288px !important;
 }
