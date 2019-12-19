@@ -11,20 +11,20 @@ body {
     height: 500px;
 }
 
-.container{
+.container {
     margin-bottom: 30px;
 }
 
 .select-container{
-    width: 100%;
+    margin-top: 15px;
 }
 
-.btnSelect-container{
+.btnSelect-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.btnSelect{
+.btnSelect {
     display: block;
     margin: 0;
     font-size: 18px;
@@ -38,33 +38,39 @@ body {
     margin-top: 15px;
 }
 
-.btnSelect:focus{
+.btnSelect:focus {
     outline: none;
 }
 
-.btnSelect:hover{
+.btnSelect:hover {
     background-color: #00A88E;
- }
-
-.btnSelect .active{
-   background-color: #00A88E;
 }
 
-.btnSelect:not(:last-child){
+.title--offices{
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: normal;
+}
+
+.btnSelect .active {
+    background-color: #00A88E;
+}
+
+.btnSelect:not(:last-child) {
     margin-right: 5px;
 }
 
-.container{
+.container {
     width: 100%;
     margin: 0 auto;
-    max-width: 1024px; 
+    max-width: 1024px;
 }
 
-.container--mb{
-    margin-bottom: 30px;
+.container--mb {
+    margin-bottom: 15px;
 }
 
-.nice-select{
+.nice-select {
     width: 360px !important;
     margin-right: 48px;
     border-radius: 0px !important;
@@ -72,35 +78,50 @@ body {
     border-radius: 0 !important;
     font-size: 18px !important;
 }
+
 .nice-select .list {
     width: 100% !important;
     border-radius: 0 !important;
     font-size: 18px !important;
 }
 
-.flex-box{
+.flex-box {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     width: 100%;
 }
 
-.dn{display: none;}
+.dn {
+    display: none;
+}
 
-@media screen and (max-width:1025px){
-    .container{
-        max-width: 770px; 
+[class*="ymaps-2"][class*="-ground-pane"] {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    /* Firefox 3.5+ */
+    -webkit-filter: grayscale(100%);
+    /* Chrome 19+ & Safari 6+ */
+}
+
+@media screen and (max-width:1025px) {
+    .container {
+        max-width: 770px;
     }
 }
 
-@media screen and (max-width:769px){
-    .container{
+@media screen and (max-width:769px) {
+    .container {
         width: 90%;
     }
 
 }
 
-@media screen and (max-width:576px){
-    .nice-select{
+@media screen and (max-width:576px) {
+    .nice-select {
         width: 288px !important;
+    }
+
+    .select-container {
+        width: 100%;
+    }
 }

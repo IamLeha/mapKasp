@@ -38,8 +38,8 @@ $(document).ready(function() {
         }),
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(),
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
-            preset: 'islands#greenDotIconWithCaption',
-            iconColor: 'green'
+            iconLayout: 'default#image',
+            iconImageHref: './favicon.png',
         })
     let elements = document.querySelectorAll(".btnSelect");
     myMap.geoObjects.add(myPlacemark)
@@ -72,7 +72,7 @@ $(document).ready(function() {
                     break;
             }
             offices.forEach(el => {
-                mark = new ymaps.Placemark(el);
+                mark = new ymaps.Placemark(el, {}, { iconLayout: 'default#image',iconImageHref: './favicon.png',});
                 myMap.geoObjects.add(mark);
                 myMap.setZoom(10, {
                     smooth: true,
