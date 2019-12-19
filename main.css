@@ -16,7 +16,7 @@ body {
 }
 
 .select-container{
-    margin-bottom: 15px;
+    margin: 15px 0px;
 }
 
 .btnSelect-container{
@@ -35,6 +35,7 @@ body {
     transition: all 0.3s ease;
     border: none;
     color: #1D1D1B;
+    margin-top: 15px;
 }
 
 .btnSelect:focus{
@@ -96,11 +97,9 @@ body {
         width: 90%;
     }
 
-    .btnSelect-container{
-        margin-top: 15px;
-    }
 }
 
 @media screen and (max-width:576px){
-
+    .nice-select{
+        width: 300px !important;
 }
