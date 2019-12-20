@@ -27,6 +27,12 @@ $(document).ready(function() {
         [25.232124, 55.276043]
     ];
 
+city = {
+    rostov: [12,123123],
+    b: [1213,123123],
+    c: [45645,123123],
+    d: [345345,123123],
+}
 
 
     ymaps.ready( () => {
@@ -77,7 +83,7 @@ $(document).ready(function() {
                 myMap.geoObjects.add(mark);
                 myMap.setZoom(10, {
                     smooth: true,
-                    duration: 2000
+                    duration: 500
                 });
             })
         };
