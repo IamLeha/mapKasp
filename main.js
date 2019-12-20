@@ -39,7 +39,8 @@ $(document).ready(function() {
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(),
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
             iconLayout: 'default#image',
-            iconImageHref: './favicon.png',
+            iconImageHref: './map-point.svg',
+            iconImageSize: [50, 50],
         })
     let elements = document.querySelectorAll(".btnSelect");
     myMap.geoObjects.add(myPlacemark)
@@ -72,7 +73,7 @@ $(document).ready(function() {
                     break;
             }
             offices.forEach(el => {
-                mark = new ymaps.Placemark(el, {}, { iconLayout: 'default#image',iconImageHref: './favicon.png',});
+                mark = new ymaps.Placemark(el, {}, { iconLayout: 'default#image',iconImageHref: './map-point.svg',iconImageSize: [50, 50],});
                 myMap.geoObjects.add(mark);
                 myMap.setZoom(10, {
                     smooth: true,
